@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    <header> 
+        <h1> Fernando Malinowski</h1>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="/"{% if categoria == "home" %} class="actual"{% endif %}>Home</a></li>
+                    <li><a href="/blog"{% if categoria == "blog" %} class="actual"{% endif %}>Blog</a></li>
+                    <li><a href="/contacto"{% if categoria == "contacto" %} class="actual"{% endif %}>Contacto</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}
+        <p>Aca va el contenido...</p>
+        {% endblock%}
+    </main>
+    <footer>
+        <h3>Copyright 2024</h3>
+    </footer>
+    
+</body>
+</html>

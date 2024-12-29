@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #d9d5d5;
+}
+
+header{
+    background-color: rgb(141, 117, 234);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.actual {
+    background-color: black;
+    color: white;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    padding: 5px;
+}
+
+footer{
+    padding: 5px;
+}
